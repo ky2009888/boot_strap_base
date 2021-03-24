@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bootstrap 页面模板</title>
+    <link rel="stylesheet" href="../bootstrap3/css/bootstrap.min.css">
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap3/js/bootstrap.min.js"></script>
+    <script src="../js/show_calc_modal.js"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <form role="form" class="form-horizontal col-md-offset-4">
+        <div class="form-group">
+            <div class="col-sm-1"><label for="num1">数字</label></div>
+            <div class="col-sm-3"><input class="form-control" type="text" name="num1" id="num1"
+                    placeholder="请输入数字"></input></div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-1"><label for="num2">数字</label></div>
+            <div class="col-sm-3"><input class="form-control" type="text" name="num2" id="num2"
+                    placeholder="请输入数字"></input></div>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg" onclick="calcu.plus();">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calcu.minus();">
+                <span class="glyphicon glyphicon-minus"></span>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calcu.multiplus();">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calcu.divide();">
+                <span class="glyphicon glyphicon-italic"></span>
+            </button>
+        </div>
+        <div class="row">
+            <div>计算结果:<span id="result"></span></div>
+        </div>
+    </form>
+</body>
+
+</html>

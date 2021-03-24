@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bootstrap 栅格网格使用</title>
+    <link rel="stylesheet" href="../bootstrap3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- 布局容器 -->
+    <div class="container">
+        <!-- 行元素 -->
+        <div class="row">
+            <!-- 列元素 代表占用几个格，默认是12 通过row的样式在同一行中工作,小屏幕和大屏幕都占用4格-->
+            <div class="col-md-4 col-lg-4" style="color:white;background-color:cornflowerblue;">4</div>
+            <div class="col-md-8 col-lg-8" style="color:white;background-color:red;">8</div>
+        </div>
+        <div class="row">
+            <!-- 列元素 代表占用几个格，默认是12 通过row的样式在同一行中工作,小屏幕和大屏幕都占用4格-->
+            <div class="col-md-4 col-lg-4" style="color:white;background-color:cornflowerblue;">4</div>
+            <div class="col-md-4 col-lg-4" style="color:white;background-color:red;">4</div>
+            <div class="col-md-4 col-lg-4" style="color:white;background-color:red;">4</div>
+        </div>
+        <hr />
+        <!-- 列偏移 列和列之间有空格-->
+        <div class="row">
+            <!-- 列元素 代表占用几个格，默认是12 通过row的样式在同一行中工作,小屏幕和大屏幕都占用4格,加上偏移col-md-offset-1的也不要超过12-->
+            <div class="col-md-2 col-lg-2" style="color:white;background-color:cornflowerblue;">2</div>
+            <div class="col-md-2 col-lg-2 col-md-offset-1" style="color:white;background-color:red;">2</div>
+            <div class="col-md-4 col-lg-4" style="color:white;background-color:red;">2</div>
+        </div>
+    </div>
+
+
+    <script src="../jquery/jquery.min.js"></script>
+    </script>
+    <script src="../bootstrap3/js/bootstrap.min.js"></script>
+    </script>
+</body>
+
+</html>

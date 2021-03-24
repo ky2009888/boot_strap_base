@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bootstrap 页面模板</title>
+    <link rel="stylesheet" href="../bootstrap3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- col-md-push-1 向右位移，col-md-pull-1 向左位移 -->
+            <div class="col-md-1" style="background-color:cornflowerblue;">1</div>
+            <div class="col-md-1" style="background-color:green;">2</div>
+            <div class="col-md-1 col-md-push-1" style="background-color:red;">3</div>
+            <div class="col-md-1" style="background-color:pink;">4</div>
+            <div class="col-md-1 col-md-pull-1" style="background-color:yellow;">5</div>
+        </div>
+        <div class="row">
+            <!-- 列嵌套 -->
+            <div class="col-md-6" style="color:white;background-color:cornflowerblue;">6
+                <!-- 重新被均分12份 -->
+                <div class="row">
+                    <!-- 可以通过样式class来控制显示，比如小屏幕，大屏幕 -->
+                    <div class="col-md-1" style="background-color:red;"></div>
+                    <div class="col-md-1" style="background-color:pink;"></div>
+                    <div class="col-md-1" style="background-color:yellow;"></div>
+                    <div class="col-md-1" style="background-color:white;"></div>
+                </div>
+            </div>
+            <div class="col-md-6" style="color:white;background-color:green;">6</div>
+        </div>
+    </div>
+
+
+    <script src="../jquery/jquery.min.js"></script>
+    </script>
+    <script src="../bootstrap3/js/bootstrap.min.js"></script>
+    </script>
+</body>
+
+</html>
